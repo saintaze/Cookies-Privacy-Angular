@@ -1,5 +1,5 @@
 # Cookies-Privacy-Angular
-A demo angular app.
+A demo angular app showing how user privacy can be controlled and made more secure.
 
 ### Features
 + Responsive Design
@@ -9,6 +9,7 @@ A demo angular app.
 + HTML5
 + SASS
 + Angular
++ Bootstrap
 
 ### Getting Started
 clone repo
