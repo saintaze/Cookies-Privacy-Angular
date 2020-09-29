@@ -19,7 +19,7 @@ clone repo
 run `ng serve`
 
 # Live Version
-#### URL: [Control your Cookies](https://reactor.ayezahmed.now.sh/)
+#### URL: [Control your Cookies](https://cookies-privacy-angular.vercel.app/)
 
 # Author
 Saintaze [@saintaze](https://github.com/saintaze/)
