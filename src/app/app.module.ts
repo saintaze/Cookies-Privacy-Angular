@@ -1,18 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserDetailsComponent } from './user-details/user-details.component';
+import { CookieBannerComponent } from './cookie-banner/cookie-banner.component';
+import { SwitchComponent } from './switch/switch.component';
+import { CookieComponent } from './cookie/cookie.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserDetailsComponent
+    CookieBannerComponent,
+    SwitchComponent,
+    CookieComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,33 @@
+<div class="cookie">
+
+  <div class="cookie-header" data-toggle="collapse" attr.data-target="#{{cookie.CategoyHeading.split(' ')[0]}}">
+    <div class="cookie-type">
+      <div class="cookie-switch"><app-switch></app-switch></div>
+      <div class="cookie-title">{{cookie.CategoyHeading}}</div>
+    </div>
+    <i class="fas fa-sort-down"></i>
+  </div>
+
+  <div class="cookie-body collapse show" id="{{cookie.CategoyHeading.split(' ')[0]}}">
+    <p class="cookie-text">{{cookie.CategoyText}}</p>
+    <table class="table table-borderless cookie-plugins">
+      <thead>
+        <tr>
+          <th scope="col" class="cookie-title">Plugins</th>
+          <th scope="col" class="cookie-title">Block/Enable</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let plugin of cookie.PluginList">
+          <td class="align-middle">{{plugin.ComplianceType}}</td>
+          <td class="align-middle"><app-switch></app-switch></td>
+          <td class="align-middle">
+            <a target="_blank" href="http://www.{{plugin.PluginDomain}}">Go to Site</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>

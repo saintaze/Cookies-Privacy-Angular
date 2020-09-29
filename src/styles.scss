@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@media screen and (max-width: 760px){
+  :root {
+    font-size: 92% ;
+  }
+}
+
+@media screen and (max-width: 560px){
+  :root {
+    font-size: 85% ;
+  }
+}

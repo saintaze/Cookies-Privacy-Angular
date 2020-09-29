@@ -1,0 +1,89 @@
+:host {
+  display: block;
+}
+
+.text {
+  color: #8e8e8efa;
+  font-weight: 300;
+  font-size: .88rem;
+  margin: 1.5rem 0;
+  line-height: 1.5;
+}
+
+.link-privacy-policy {
+  color: #212529;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: .87rem;
+  
+  &:hover {
+    transition: all .2s;
+    text-decoration: underline;
+    color:lighten(#212529, 35);
+  }
+}
+
+.btn-actions {
+  margin: 2.4rem 0 2rem;
+}
+
+.btn {
+  width: 8rem;
+  height: 2.4rem;
+  outline: none;
+  font-weight: 300;
+  border-radius: 4px;
+
+  &-accept{
+    background-color: #24b04b;
+    color: white;
+    font-weight: 400;
+
+    &:hover{
+      background-color: darken( #24b04b, 8);
+    }
+  }
+
+  &-save {
+    border-color: #eee;
+    color: #888;
+    margin-left: .8rem;
+
+    &:hover{
+      color: darken(#888, 25);
+      border-color: darken(#ddd, 25);
+    }
+  }
+
+  &-customize {
+    border: none;
+    color: #888;
+
+    &:hover{
+      color: darken(#888, 25);
+    }
+  }
+
+  .fa-sort-down{
+    display: inline-block;
+    position: relative;
+    top: -0.2rem;
+    margin-left: .3rem;
+    height: 6px;
+    line-height: 0;
+    transition: all .21s;
+  }
+
+  &-customize.collapsed {
+    .fa-sort-down{
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.collapse-body {
+  padding: 2rem 2.1rem;
+  background-color: #f3f3f3;
+  box-shadow: 0px 5px 11px 0px inset rgba(222, 222, 222, 0.8);
+}
